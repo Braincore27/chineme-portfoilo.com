@@ -1,0 +1,196 @@
+@media only screen and (max-width: 1200px) {
+    
+    #header{
+        width: 0;
+    }
+
+    .container{
+        padding: 3rem 6rem;
+    }
+
+    .skills{
+        padding: 3rem 6rem;
+    }
+
+    .hero-text{
+        padding: 0 0 0 17%;
+    }
+    
+    #main{
+        padding-left: 0;
+    }
+
+    .header-copyright{
+        display: none;
+    }
+
+    .toggle-menu{ 
+        display: block;
+    }
+
+    .slide-each{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 997px) {
+
+    .about-content{
+        display: block;
+    }
+
+
+    #main h1{
+        font-size: 28px;
+    }
+
+    .achievement-box{
+        min-width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    .skill-div{
+        display: none;
+    }
+
+    .skills-list-mobile{
+        display: block;
+    }
+
+    .resume-content-left{
+        flex-basis: 90%;
+    }
+
+    .resume-content-right{
+        flex-basis: 90%;
+    }
+
+    .gallery-images img{
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    .card-info img{
+        width: 20px;
+        margin: 0 1rem;
+    }
+
+    .service{
+        flex-basis: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 766px) {
+
+    .hero-text h1{
+        font-size: 30px;
+    }
+
+    .hero-text h1{
+        line-height: 40px;
+    }
+
+    .hero-text{
+        width: 100%;
+        padding: 0 5rem;
+        text-align: left;
+    }
+
+    #hero{
+        position: relative;
+    }
+
+    .container{
+        padding: 3rem 1rem;
+    }
+
+    .skills{
+        padding: 3rem 1rem;
+    }
+
+    .about-content-info-left{
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+    }
+
+    .about-content-info{
+        display: block;
+    }
+
+    .achievement-box{
+        min-width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    .skill-div{
+        display: none;
+    }
+
+    .skills-list-mobile{
+        display: block;
+    }
+
+    .card-info img{
+        width: 20px;
+        margin: 0 1rem;
+    }
+
+    .service{
+        flex-basis: 100%;
+    }
+
+    .contact-form a{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .hero-text h1{
+        line-height: 40px;
+        font-size: 2.3rem;
+    }
+
+    .hero-text{
+        width: 100%;
+        padding: 0 2rem;
+        text-align: left;
+    }
+
+    .container{
+        padding: 3rem 1rem;
+    }
+
+    .skills{
+        padding: 3rem 1rem;
+    }
+
+    .skill-div{
+        display: none;
+    }
+
+    .skills-list-mobile{
+        display: block;
+    }
+
+    .gallery-images img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-info img{
+        width: 20px;
+        margin: 0 0.5rem;
+    }
+
+    .contact-form a{
+        width: 100%;
+    }
+
+}

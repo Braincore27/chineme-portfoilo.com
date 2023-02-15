@@ -1,0 +1,836 @@
+/* ========================== Import Fonts ========================== */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Shadows+Into+Light&display=swap');
+
+/* ======================== General ==================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* ===== Background Color ===== */
+    --main-background: #ffff;
+    --highlight-color: #2C2F3F;
+    --secondary-bg: #F5F8FD;
+
+    /* ====== Brand Color ====== */
+    --brand-color-light: #149DDD;
+    --brand-color-dark: #040B14;
+
+    /* ======= Text Color ========= */
+    --text-color-white: #ffff;
+    --text-faint-blue: #6F7180;
+    --text-shine-blue: #A8A9B4;
+    --h1-color-dark-blue: rgb(23, 59, 108);
+    --p-color-faith: rgb(39, 40, 41);
+
+    /* ============= Border ============== */
+    --border: 1px solid rgb(201, 201, 201);
+
+
+    /* ============= Line Color ============== */
+    --line-color: #1F5297;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--brand-color-light);
+}
+
+/*==================== Elements =====================*/
+
+
+/* ------------- Header Style ---------------- */
+#header{
+    background: black;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    z-index: 200;
+}
+
+.header-top{
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.header-top .img-dp{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--highlight-color);
+
+}
+
+.header-top h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+.social-links{
+    margin-top: 0.7rem;
+}
+
+.social-links img{
+    width: 35px;
+    background: var(--highlight-color);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0 0.2rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.social-links img:hover{
+    background: var(--brand-color-light);
+}
+
+
+.header-menu-list{
+    line-height: 3.4rem;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-menu-list div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-faint-blue);
+}
+
+.header-menu-list div img{
+    width: 30px;
+    margin-right: 0.5rem;
+    /* filter: invert(100%); */
+    /* -webkit-filter: invert(100%); */
+}
+
+.header-menu-list div span{
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    transition: 0.2s all ease;
+}
+
+.header-menu-list div p{
+    transition: 0.2s all ease;
+}
+
+.active_icon{
+    color: var(--brand-color-light);
+}
+
+.active_text{
+    color: var(--text-color-white);
+}
+
+.header-menu-list div:hover span{
+    color: var(--brand-color-light);
+}
+
+.header-menu-list div:hover p{
+    color: var(--text-color-white);
+}
+
+
+.header-list-active{
+    color: var(--text-color-white);
+}
+
+.header-copyright{
+    padding: 0 3rem;
+    text-align: center;
+    color: var(--text-color-white);
+}
+
+.header-copyright p{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.header-copyright p span{
+    color: var(--brand-color-light);
+}
+
+/* --------------- End of Header ------------------*/
+
+#hero{
+    background-image: url(../images/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text{
+    padding: 0 0 0 50%;
+    margin-bottom: 2rem;
+}
+
+.hero-text h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 55px;
+    font-style:normal;
+    color: var(--text-color-white);
+}
+
+.hero-text p{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.hero-text p span{
+    text-decoration: underline;
+    text-decoration-color: var(--brand-color-light);
+    text-underline-offset: 15px;
+    font-size: 1.5rem;
+}
+
+.container{
+    padding: 3rem 2rem;
+    background: var(--main-background);
+}
+
+#main{
+    padding-left: 300px;
+}
+
+
+/* ============= Navigation Icon =============== */
+.toggle-menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: none;
+}
+
+.toggle-menu img{
+    width: 40px;
+    background: var(--brand-color-light);
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* =========== Main Fonts ============= */
+
+#main p{
+    color: var(--p-color-faith);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open sans", sans-serif;
+    font-style: normal;
+    line-height: 24px;
+}
+
+#main h1{
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    color: var(--h1-color-dark-blue);
+    font-weight: 700;
+}
+
+.section-title{
+    font-size: 1.5rem;
+}
+
+
+/* ------------------- About Section ------------------- */
+
+.underline{
+    display: inline-block;
+    background: var(--brand-color-light);
+    height: 0.2rem;
+    width: 4rem;
+}
+
+.about-top p{
+    margin-top: 0.6rem;
+}
+
+.about-content{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.about-content-left{
+    flex-basis: 31%;
+}
+
+.about-content-left img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-content-right{
+    flex-basis: 66%;
+}
+
+.about-content-info{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+}
+
+.about-content-info-left{
+    margin-right: 8rem;
+}
+
+.flex-list{
+    margin: 0 0 1.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.flex-list p b{
+    margin-right: 0.5rem;
+}
+
+.flex-list:last-child{
+    margin-bottom: 0;
+}
+
+.about-content-info div img{
+    width: 12px;
+    margin-right: 0.5rem;
+}
+
+
+/* --------------- Fact About Me Section ---------------- */
+#fact-about-me{
+    margin: 3rem 0;
+}
+
+.flex-lists{
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-lists p{
+    padding: 0;
+    line-height: 0;
+}
+
+.fact-lists{
+    line-height: 0.3rem;
+    margin-top: 1rem;
+}
+
+.flex-lists img{
+    width: 10px;
+    margin-right: 0.7rem;
+    margin-top: 7px;
+}
+
+
+/* =================Achievements================= */
+.achievements{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 2rem;
+}
+
+.achievement-box{
+    display: flex;
+    align-items: flex-start;
+    min-width: 20%;
+}
+
+.achievement-box img{
+    width: 60px;
+    margin-right: 0.5rem;
+}
+
+.achievement-box-text{
+    max-width: 120px;
+}
+
+
+/* ----------------------- Skills ----------------------*/
+.skills{
+    background: var(--secondary-bg);
+    padding: 3rem 2rem;
+}
+
+.skills-list{
+    margin: 2rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-div{
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--main-background);
+    border: var(--border);
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    min-width: 220px;
+}
+
+.skill-div img{
+    width: 50px;
+    background: var(--brand-color-light);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.skill-div-text{
+    width: 100%;
+}
+
+#main .skill-div-text h1{
+    font-size: 1rem;
+    color: var(--brand-color-dark);
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+}
+
+#main .skill-div-text p{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 19.2px;
+    color: var(--text-faint-blue);
+    font-weight: 500;
+}
+
+
+/* --------- Skill List Mobile ------------ */
+
+.skills-list-mobile{
+    display: none;
+    margin-top: -30px;
+}
+
+.skills-list-mobile .about-content-info .flex-list img{
+    width: 30px;
+    margin-right: 1rem;
+}
+
+
+/* ----------------------- Resume ----------------------*/
+.resume-contents{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resume-content-left{
+    flex-basis: 48%;
+}
+
+.resume-content-right{
+    flex-basis: 48%;
+    margin-top: 2rem;
+}
+
+#main .resume-content-left h1, #main .resume-content-right h1{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    line-height: 31px;
+    color: var(--brand-color-dark);
+}
+
+.resume-content-left-text{
+    margin-top: 0.7rem;
+    height: max-content;
+    position: relative;
+}
+
+
+#main .resume-content-left-text h1{
+    font-size: 18px;
+    color: var(--brand-color-dark);
+
+}
+
+.rel{
+    position: relative;
+    margin-right: 1rem;
+    margin-top: 8px;
+}
+
+.before::before{
+    content: "";
+    display: block;
+    width: 0.1rem;
+    height: 100%;
+    position: absolute;
+    background: var(--line-color);
+    top: 10px;
+}
+
+.before h1, .before p{
+    margin-left: 1.2rem;
+}
+
+#main .date{
+    font-family: "Raleway", sans-serif;
+    background: #E4EDF9;
+    max-width: max-content;
+    color: var(--brand-color-dark);
+    padding: 0.2rem 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* --------------------- Gallery Design ------------------ */
+.gallery-categories{
+    width: 110%;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.group2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery-category-switch{
+    display: flex;
+    align-items: center;
+    background: var(--main-background);
+    padding: 0.9rem 1.4rem;
+    border-radius: 50px;
+    flex-wrap: wrap;
+}
+
+#main .gallery-category-switch p{
+    margin: 0 0.3rem;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    font-style: normal;
+}
+
+.gallery-images img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.gallery-images{
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+
+.gallery-image{
+    position: relative;
+}
+
+.card-info{
+    width: 100%;
+    position: absolute;
+    background: rgba(39, 40, 41, 0.945);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 0.8rem;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.gallery-image:hover .card-info{
+    opacity: 1;
+}
+
+.card-info img{
+    width: 25px;
+    filter: invert(100%);
+}
+
+#main .gal-active{
+    color: var(--brand-color-light);
+}
+
+.social-media{
+    display: none;
+}
+
+.portfolio{
+    display: none;
+}
+
+.ecommerce{
+    display: none;
+}
+
+
+/* ---------------------- Services -------------------- */
+.services-lists{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.service{
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 33%;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease;
+}
+
+.service img{
+    width: 80px;
+    background: var(--main-background);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-right: 1.3rem;
+    border: 1px var(--brand-color-light) solid;
+    transition: all 0.4s ease;
+}
+
+#main .service h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: var(--brand-color-dark);
+}
+
+#main .service p{
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-family: "Open sans", sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+.service:hover .hide{
+    background: transparent;
+}
+
+
+/* -------------------- Swipper ------------------ */
+
+.testimonials-slider{
+    margin-top: 2rem;
+}
+
+.slide-each{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+}
+
+.quote{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C3E8FA;
+    margin: 0;
+    padding: 0;
+}
+
+
+.swiper-slide .slider-main-text{
+    background: var(--main-background);
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#main .swiper-slide .slider-main-text p{
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Open sans", sans-serif;
+    text-align: center;
+}
+
+#main .swiper-slide .slider-title{
+    text-align: center;
+}
+
+#main .swiper-slide .slider-title h3{
+    font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+#main .swiper-slide .slider-title p{
+    font-size: 14px;
+}
+
+.swiper-slide img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+}
+
+ .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+ .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #149ddd;
+  }
+  
+ .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #149ddd;
+  }
+  
+
+
+/* ======================= Contact Form ================*/
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.contact-form a{
+    min-width: 300px;
+    max-height: max-content;
+    margin-bottom: 1rem;
+
+}
+
+#main .contact-form a:hover{
+    background: none;
+}
+
+.contact-card{
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.contact-card:hover{
+    background: #6f71805d;
+}
+
+.contact-card div{
+    display: flex;
+    align-items: center;
+}
+
+.contact-card img{
+    width: 30px;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+
+#main .contact-card p{
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+/*================= footer =================*/
+.footer{
+    width: 100%;
+    background: var(--brand-color-dark);
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+#main .footer p{
+    color: var(--text-color-white);
+    font-size: 14px;
+}
+
+#main .footer p span{
+    color: var(--brand-color-light);
+}
+
+/* ---------------- Scroll to Top --------------- */
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1200202;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.scroll-to-top img{
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    background: var(--brand-color-light);
+    padding: 0.2rem;
+}
