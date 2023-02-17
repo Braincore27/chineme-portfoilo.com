@@ -208,7 +208,8 @@ a{
 
 .hero-text p{
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size:2rem;
+    color:  var(--brand-color-light);
 }
 
 .hero-text p span{
